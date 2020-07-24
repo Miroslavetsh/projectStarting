@@ -1,0 +1,22 @@
+.accordion {
+	&__item {
+		margin-bottom: 20px;
+	}
+	&__trigger {
+		padding: 20px;
+		border: 1px solid #000;
+	}
+	&__item--active .accordion__trigger {
+		background-color: #ccc;
+	}
+	&__item--active .accordion__content {
+		display: block;
+		background-color: #ccc;
+	}
+	&__content {
+		padding: 20px;
+		border: 1px solid #000;
+		border-top: none;
+		display: none;
+	}
+}

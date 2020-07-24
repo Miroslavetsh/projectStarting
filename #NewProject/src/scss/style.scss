@@ -1,0 +1,20 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+@font-face {
+	font-family: $font_name;
+	font-display: swap;
+	src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+	font-weight: #{$weight};
+	font-style: #{$style};
+	}
+}
+
+$facebook : #3b5998;
+$twitter : #55ADEE;
+$linkedin : #2867B2;
+$instagram : linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+$dribble : #ea4c89;
+$whatsup : #25D366;
+
+@import "nullstyle";
+@import "adfont";
+@import "fonts";

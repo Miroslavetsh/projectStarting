@@ -1,0 +1,43 @@
+.block {
+	&__item {
+		margin: 0 0 20px 0;
+	}
+	&__title {
+		padding: 0 0 0 30px;
+		position: relative;
+		cursor: pointer;
+		&:before, &:after {
+			content: '';
+			width: 10px;
+			height: 1px;
+			position: absolute;
+			top: 8px;
+
+			background-color: #000;
+
+			transition: all .3s ease;
+		}
+		&:before {
+			transform: rotate(40deg);
+			left: 0;
+		}
+		&:after {
+			transform: rotate(-40deg);
+			left: 8px;
+		}
+		&.active:after, 
+		&.active:before {
+			background-color: #f00;
+		}
+		&.active:before {
+			transform: rotate(-40deg);
+		}
+		&.active:after {
+			transform: rotate(40deg);
+		}
+	}
+	&__content {
+		display: none;
+		padding: 10px 0 0 0;
+	}
+}

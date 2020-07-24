@@ -1,0 +1,21 @@
+.tabs {
+	&__triggers {
+		display: flex;
+	}
+	&__trigger {
+		text-decoration: none;
+		text-align: center;
+		flex-grow: 1;
+	}
+	&__trigger--active {
+		background-color: #eee;
+	}
+	&__content {}
+	&__item {
+		display: none;
+		background-color: #eee;
+	}
+	&__item--active {
+		display: block;
+	}
+}

@@ -1,0 +1,23 @@
+.slider {
+	&__container {
+		overflow: hidden;
+		background-color: #f0f;
+	}
+	&__track {
+		display: flex;
+		background-color: #ff0;
+
+		transition: .2s;
+	}
+	&__item {
+		height: 100px;
+		&:nth-child(3n+1){background-color: #f00;}
+		&:nth-child(3n+2){background-color: #0f0;}
+		&:nth-child(3n+3){background-color: #00f;}
+	}
+	&__buttons {
+		text-align: center;
+		.button__prev {}
+		.button__next {}
+	}
+}

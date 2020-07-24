@@ -1,0 +1,23 @@
+.rating {
+	&[data-total-value="1"] &__item:nth-child(n + 5),
+	&[data-total-value="2"] &__item:nth-child(n + 4),
+	&[data-total-value="3"] &__item:nth-child(n + 3),
+	&[data-total-value="4"] &__item:nth-child(n + 2),
+	&[data-total-value="5"] &__item:nth-child(n + 1){
+		color: orange;
+	}
+	display: inline-flex;
+	flex-direction: row-reverse;
+	&__item {
+		color: #dcdcdc;
+		font-size: 60px;
+		cursor: pointer;
+		transition: all .4s ease;	
+		&:hover{
+			color: #989898;
+		}
+		&:hover ~ &{
+			color: #989898;
+		}	
+	}
+}
